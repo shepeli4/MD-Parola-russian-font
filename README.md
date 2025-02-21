@@ -1,1 +1,1 @@
-# russian-font-parola-arduino
+# parola-russian-font
