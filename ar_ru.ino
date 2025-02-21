@@ -3,14 +3,14 @@
 #include <SPI.h>
 #include "Parola_Fonts_data.h"
 #define HARDWARE_TYPE MD_MAX72XX::FC16_HW
-#define MAX_DEVICES 4 // количество модулей
+#define MAX_DEVICES 4 // Количество модулей  |  Number of modules
 #define CLK_PIN 18     // CLK or SCK
 #define DATA_PIN 23   // DATA or MOSI
 #define CS_PIN 13      // CS or SS
 
 MD_Parola P = MD_Parola(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
 MD_MAX72XX mx = MD_MAX72XX(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
-const char *outputText = "Пример вывода текста. Example of text output.";                         //Введите текст в кавычки
+const char *outputText = "Пример вывода текста. Example of text output.";  // Введите текст в кавычки | Enter text in quotes
 
 #pragma once   
 const uint8_t PROGMEM font_rus[] =
@@ -94,7 +94,7 @@ const uint8_t PROGMEM font_rus[] =
   5, 127, 64, 64, 64, 64,   // 76 - 'L'
   5, 127, 4, 24, 4, 127,     // 77 - 'M'
   5, 127, 4, 8, 16, 127,    // 78 - 'N'
-  7, 12, 18, 12, 64, 72, 20, 8,    //12, 18, 12, 64, 64, 72, 20, 8,      // 79 - 'O'                                                            ЗАМЕНЕН НА 0_о
+  5, 62, 65, 65, 65, 62,    // 79 - 'O'
   5, 127, 9, 9, 9, 6,   // 80 - 'P'
   5, 62, 65, 81, 33, 94,    // 81 - 'Q'
   5, 127, 9, 25, 41, 70,    // 82 - 'R'
@@ -273,13 +273,8 @@ const uint8_t PROGMEM font_rus[] =
   0,    // 255
 };
 
-byte face[8] = {0x00, 0x40, 0xA2, 0xA5, 0x42, 0x00, 0x1C, 0x00};
 
 void setup() {
-  mx.begin();
-  mx.control(MD_MAX72XX::INTENSITY, 2);
-  mx.clear();
-  
   P.begin();
   //P.setZone(0, 1, 3);
   P.setIntensity(3);
@@ -288,17 +283,11 @@ void setup() {
 }
 
 void loop() {
-  //drawShape();
   if (P.displayAnimate()){
     P.displayReset();
   }
 }
 
-void drawShape() {
-  for (int i = 0; i <= 7; i++) {
-    mx.setRow(0, 0, i, face[i]);
-  }
-}
 
   
 
