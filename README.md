@@ -18,3 +18,8 @@ How does character encoding work: The first digit is the width of the character,
 <p>⠀1⠀⠀⠀0⠀⠀⠀0⠀⠀⠀0⠀⠀⠀1⠀⠀⠀⠀⠀⠀⠀█⠀⠀⠀.⠀⠀⠀.⠀⠀⠀.⠀⠀⠀█</p>
 <p>⠀1⠀⠀⠀0⠀⠀⠀0⠀⠀⠀0⠀⠀⠀1⠀⠀⠀⠀⠀⠀⠀█⠀⠀⠀.⠀⠀⠀.⠀⠀⠀.⠀⠀⠀█</p>
 <p>⠀0⠀⠀⠀0⠀⠀⠀0⠀⠀⠀0⠀⠀⠀0⠀⠀⠀⠀⠀⠀⠀.⠀⠀⠀.⠀⠀⠀.⠀⠀⠀.⠀⠀⠀.</p>
+<p></p>
+
+You can add any language knowing the `ASCII` encoding of its characters.
+
+Вы можете добавить любой язык, зная кодировку `ASCII` его символов.
