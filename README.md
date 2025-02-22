@@ -22,4 +22,4 @@ How does character encoding work: The first digit is the width of the character,
 
 You can add any language knowing the `ASCII` encoding of its characters.
 
-Вы можете добавить любой язык, зная кодировку `ASCII` его символов.
+Вы можете добавить любой язык, зная `ASCII` кодировку его символов.
