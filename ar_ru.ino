@@ -4,9 +4,9 @@
 #include "Parola_Fonts_data.h"
 #define HARDWARE_TYPE MD_MAX72XX::FC16_HW
 #define MAX_DEVICES 4 // Количество модулей  |  Number of modules
-#define CLK_PIN 18     // CLK or SCK
-#define DATA_PIN 23   // DATA or MOSI
-#define CS_PIN 13      // CS or SS
+#define CLK_PIN 18     // CLK или SCK | CLK or SCK 
+#define DATA_PIN 23   // DATA или MOSI | DATA or MOSI
+#define CS_PIN 13      // CS или SS | CS or SS
 
 MD_Parola P = MD_Parola(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
 MD_MAX72XX mx = MD_MAX72XX(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
@@ -276,9 +276,8 @@ const uint8_t PROGMEM font_rus[] =
 
 void setup() {
   P.begin();
-  //P.setZone(0, 1, 3);
-  P.setIntensity(3);
-  P.setFont(font_rus);
+  P.setIntensity(3);  //1-15
+  P.setFont(font_rus);  //We don't have other
   P.displayScroll(outputText, PA_CENTER, PA_SCROLL_LEFT, 40);
 }
 
