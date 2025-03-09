@@ -1,8 +1,8 @@
 # MD-Parola-russian-font
 <p align="right">
-  <a href="./README-RU.md">English</a>
+  <a href="./README.md">English</a>
   |
-  <a href="./README.md">Русский</a>
+  <a href="./README-RU.md">Русский</a>
 </p>
 
 **Русский шрифт для библиотеки MD_Parola. Перед компиляцией необходимо проверить наличие файла Parola_Fonts_data.h в папке `\Arduino\libraries\MD_Parola\src\`, если его там нет, необходимо скопировать его из папки `\Arduino\libraries\MD_Parola\examples\Parola_Fonts\` в `\Arduino\libraries\MD_Parola\src\`. Также проверьте правильность указания контактов и `HARDWARE_TYPE`.**
