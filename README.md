@@ -1,6 +1,6 @@
 # MD-Parola-russian-font
 <p align="right">
-  <a href="./README.en-US.md">English</a>
+  <a href="./README-RU.md">English</a>
   |
   <a href="./README.md">Русский</a>
 </p>
